@@ -9,7 +9,7 @@ ii. Set of students who play both cricket and badminton
 iii. Set of students who play only cricket
 iv. Set of students who play only badminton
 v. Number of students who play neither cricket nor badminton.
-(Note- While realizing the set duplicate entries are to avoided)
+(Note- While realizing the set duplicate entries are to avoided.)
 */
 
 #include<iostream>
