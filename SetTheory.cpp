@@ -190,4 +190,3 @@ void SEComp::neithernor()       {
         
         cout<<"\n Count of students with neither Cricket nor Badminton : "<<count;
 }
-
