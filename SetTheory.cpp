@@ -9,7 +9,7 @@ ii. Set of students who play both cricket and badminton
 iii. Set of students who play only cricket
 iv. Set of students who play only badminton
 v. Number of students who play neither cricket nor badminton.
-(Note- While realizing the set duplicate entries are to avoided.)
+(Note- While realizing the set duplicate entries are to avoided)
 */
 
 #include<iostream>
@@ -25,6 +25,8 @@ private:
   int setA[M], setB[M], c1, c2;
 
 protected:
+
+//function to check if "l" exists in the array t[]
   int ifexists(int t[], int l) {
     int max = 0;
     for(int a = 0; t[a] != 0; a++)
@@ -35,7 +37,7 @@ protected:
   }
 
   void onlyOne(int[],int,int[]);
-  void eitherorboth();
+  void unionOperation();
   void both();
   void neithernor();
 
@@ -59,17 +61,20 @@ int main() {
 }
 
 void SEComp::getData() {
-  while(c1>=0 && c1<=M) {
+  do{
     cout<<"Enter count who play Cricket: ";
     cin>>c1;
-}
+}while(c1<0||c1>M);
+
   cout<<"Enter rollno who play Cricket: ";
   for(int i = 0; i < c1; i++)
   cin>>setA[i];
-  while(c2>=0 && c2<=M){
+
+  do{
       cout<<"Enter count who play Badminton: ";
       cin>>c2;
-}
+}while(c2<0 || c2>M);
+
   cout<<"Enter rollno who play Badminton: ";
   for(int i = 0; i < c2; i++)
     cin>>setB[i];
@@ -88,7 +93,7 @@ void SEComp::showData() {
 
   cin>>choice;
   switch(choice) {
-    case 1: eitherorboth();  break;
+    case 1: unionOperation();  break;
     case 2: both();          break;
     case 3: cout<<"\n Set of students with only Cricket: \n";
             onlyOne(setA,c1,setB);
@@ -119,6 +124,7 @@ void SEComp::onlyOne(int set1[],int size,int set2[])  {
     }
   }
 
+//Display the Result set array
   for(i = 0; i < size; i++) {
     if(rs[i] != 0)
       cout<<rs[i]<<"\t";
@@ -145,7 +151,7 @@ void SEComp::both() {
   }
 }
 
-void SEComp::eitherorboth() {
+void SEComp::unionOperation() {
   int rs[M], i, r = 0;
 
   for(i = 0; i < c1; i++, r++)
