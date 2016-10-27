@@ -3,17 +3,8 @@ Author: Omkar Nath Singh
 
 #DS Day 2: Problem Statement
 Part I.
-Implement working of Stack (LIFO) using
-1. Array
-2. Linked List
+Implement working of Stack (LIFO) using Linked List
 Try to have most of the functions which are supported by Stack.
-
-Part II.
-Extend above program with functions-
-1. to check whether given string is palindrome or not that uses a stack to determine whether a string is a palindrome.
-2. to remove spaces and punctuation in string, convert all the Characters to lowercase, and then call above Palindrome checking function to check for a palindrome.
-3. to print string in reverse order using stack.
-
 */
 
 #include<iostream>
