@@ -34,10 +34,10 @@ protected:
   }
 
   void onlyOne(int set1[], int size, int set2[]) {
-  // rs[] is the result set
-  // r is the array iterator for rs[]
-  // set1[] will hold the original array
-  // set2[] will hold the subtrator array
+    // rs[] is the result set
+    // r is the array iterator for rs[]
+    // set1[] will hold the original array
+    // set2[] will hold the subtrator array
 
     int rs[M], i, r = 0;
 
@@ -120,20 +120,21 @@ public:
     c1=0;
     c2=0;
   }
+
   void getData() {
     do{
       cout<<"Enter count who play Cricket: ";
       cin>>c1;
-  }while(c1<0||c1>M);
+    } while(c1 < 0 || c1 > M);
 
     cout<<"Enter rollno who play Cricket: ";
     for(int i = 0; i < c1; i++)
-    cin>>setA[i];
+      cin>>setA[i];
 
     do{
-        cout<<"Enter count who play Badminton: ";
-        cin>>c2;
-  }while(c2<0 || c2>M);
+      cout<<"Enter count who play Badminton: ";
+      cin>>c2;
+    } while(c2 < 0 || c2 > M);
 
     cout<<"Enter rollno who play Badminton: ";
     for(int i = 0; i < c2; i++)
@@ -153,16 +154,19 @@ public:
 
     cin>>choice;
     switch(choice) {
-      case 1: unionOperation();  break;
-      case 2: both();          break;
+      case 1: unionOperation();
+              break;
+      case 2: both();
+              break;
       case 3: cout<<"\n Set of students with only Cricket: \n";
               onlyOne(setA,c1,setB);
               break;
       case 4: cout<<"\n Set of students with only Badminton: \n";
               onlyOne(setB,c2,setA);
               break;
-      case 5: neithernor();    break;
-      case 6: exit(0);
+      case 5: neithernor();
+              break;
+      //case 6: exit(0);
       default: "Invalid choice entered !!! ";
     }
   }
