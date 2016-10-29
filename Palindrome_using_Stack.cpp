@@ -15,51 +15,75 @@ Extend above program with functions-
 
 #include<iostream>
 #include<string.h>
-
+#include<ctype.h>
 using namespace std;
 #define MAX 50
 
 class Stack  {
 private:
-  char data[MAX];
-  int top;
+  char data[MAX],str[MAX];
+  int top,length,count;
+  
   void pushData(char);
   char popData();
+
 public:
   Stack() {
     top=-1;
+    length=0;
+    count=0;
   }
-
+  void getString();
   void checkPalindrome();
+  void extractString();
 };
 
 int main()  {
   Stack obj;
+  obj.getString();
+  obj.extractString();
   obj.checkPalindrome();
   return 0;
 }
 
-void Stack::checkPalindrome() {
-  char str[MAX];
+void Stack::getString() {
   cout<<"\n Enter a String: ";
   cin.getline(str,MAX);
 
-  int length,i,count;
   length=strlen(str);
-  count=0;
+}
 
-  for(i=0; i<length; i++)
+void Stack::extractString() {
+  char temp[MAX];
+  int i,j;
+  for(i=0; i<length; i++) {
+    temp[i]=str[i];
+  }
+  j=0;
+  for(i=0; i<length; i++ )  {
+    if(isalpha(temp[i]))  {
+      str[j]=tolower(temp[i]);
+      j++;
+    }
+  }
+
+  length=j;   //update length with new str length
+
+}
+
+void Stack::checkPalindrome() {
+  for(int i=0; i<length; i++)
     pushData(str[i]);
 
-  for(i=0; i<length; i++) {
+  for(int i=0; i<length; i++) {
     if(str[i]==popData())
       count++;
   }
 
   if(count==length) {
-    cout<<"\n Entered string is a Palindrome.";
+    cout<<"\n Entered string is a Palindrome. \n";
   }
-  else  cout<<"\n Entered string is not a Palindrome";
+  else  cout<<"\n Entered string is not a Palindrome. \n";
 }
 
 void Stack::pushData(char temp) {
