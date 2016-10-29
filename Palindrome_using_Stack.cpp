@@ -23,7 +23,7 @@ class Stack  {
 private:
   char data[MAX],str[MAX];
   int top,length,count;
-  
+
   void pushData(char);
   char popData();
 
@@ -36,12 +36,17 @@ public:
   void getString();
   void checkPalindrome();
   void extractString();
+  void displayReverse();
 };
 
 int main()  {
   Stack obj;
   obj.getString();
   obj.extractString();
+  cout<<"\n String extracted after removing punctuations and symbols";
+  cout<<"\n String converted to lower case";
+  cout<<"\n Reverse of entered string: ";
+  obj.displayReverse();
   obj.checkPalindrome();
   return 0;
 }
@@ -86,6 +91,10 @@ void Stack::checkPalindrome() {
   else  cout<<"\n Entered string is not a Palindrome. \n";
 }
 
+void Stack::displayReverse()  {
+  for(int i=0; i<length; i++)
+    cout<<str[i];
+}
 void Stack::pushData(char temp) {
 
   if(top==MAX-1)  {
