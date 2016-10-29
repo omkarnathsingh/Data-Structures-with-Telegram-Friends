@@ -3,10 +3,7 @@ Author: Omkar Nath Singh
 
 #DS Day 2: Problem Statement
 Part I.
-Implement working of Stack (LIFO) using
-1. Array
-2. Linked List
-Try to have most of the functions which are supported by Stack.
+Implement working of Stack (LIFO) using Array
 
 Part II.
 Extend above program with functions-
