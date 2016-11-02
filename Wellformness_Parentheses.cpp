@@ -2,7 +2,7 @@
 Author: Omkar Nath Singh
 
 #DS Day 4: Problem Statement
-n any language program mostly syntax error occurs due to unbalancing delimiter such as (),{},[].
+In any language program mostly syntax error occurs due to unbalancing delimiter such as (),{},[].
 Write C++ program using stack to check whether given expression is well parenthesized or not.
 
 */
