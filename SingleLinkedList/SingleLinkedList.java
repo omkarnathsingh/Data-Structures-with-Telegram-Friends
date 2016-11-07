@@ -1,29 +1,10 @@
-/* PROBLEM STATEMENT:
-In this project, you will implement a system to accept new students at a university based on an admission mark 
-that is computed based on the Tawjihi, High-School, and Placement Test grades.
-
-Your program should assign new registered students to their majors based on their admission marks. 
-Each input student should be assigned to one major only. 
-The student may not be assigned to any major if (s)he didn’t pass achieve the required admission marks of majors 
-for all faculties. Each major has a unique non-overlapping range of averages. 
-For example, Medicine [97-99], Engineering [90-96], Science [85-89], and so on. 
-
-Your program should read two input files. 
-The containing the Name of students, Tawjihi, High-school, and Placement test grade.
-
-The second file should contain the acceptance criteria by the university that is:
-1.the Tawjihi grade’s rate in the admission mark
-2.school grade’s rate in the admission mark
-3.Placement test grade’s in the admission mark
-4.A list of faculties and the range of their averages
-
-Your application should have the options of:
-1. Read the files;
-2. Accept new students; 
-3. Print (on the screen) all accepted students based on their faculties;
-4. Print (on the screen) rejected students; 
-5. Write accepted and not accepted students to files;
-and 6. Quit 
+/* Author: Omkar Nath Singh
+ * for omkarnathsingh.wordpress.com
+ * 
+ * Important: 
+ * Do not edit file1.txt and file2.txt
+ * If you want to put your entries, use tabs between the characters/words in the shown
+ * format only.
  */
 
 
@@ -259,12 +240,3 @@ public class SingleLinkedList {
 	}	//end of main()
 
 }		//end of class
-
-/* Author: Omkar Nath Singh
- * for omkarnathsingh.wordpress.com
- * 
- * Important: 
- * Do not edit file1.txt and file2.txt
- * If you want to put your entries, use tabs between the characters/words in the shown
- * format only.
- */
