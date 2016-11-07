@@ -1,0 +1,8 @@
+Accepted Students 
+Name: Omkar
+Selected Faculty : Commerce
+Name: Nath
+Selected Faculty : Science
+
+Rejected Students 
+Name: Singh
