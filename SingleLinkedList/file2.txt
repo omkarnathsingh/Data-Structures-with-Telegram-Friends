@@ -1,0 +1,8 @@
+Tawjihi	:	50
+HighSchool	:	30
+Placement	:	20
+Medicine	:	97	99
+Engineering	:	90	96
+Science	:	85	89
+Commerce	:	80	84
+Humanities	:	75	79	
