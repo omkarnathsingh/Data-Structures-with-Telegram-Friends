@@ -48,4 +48,37 @@ After second update list will be 100 200 100 100 100.
 After third update list will be 100 200 200 200 100.
 So the required answer will be 200.
 
+
+Not my code!!! Outsources as original code was giving timeout.
+
+
+
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+      
+    long long int n,m,a,b,k,large=0;
+    long long int arr[1000000];
+    cin»n»m;
+    
+    while(m){
+        cin»a»b»k;
+        
+        for(int i=a;i<=b;i++){
+            arr[i]+=k;
+            if(large<arr[i])  large=arr[i];
+        }
+        m--;
+    }
+    
+    cout«large;
+    return 0;
+}
 */
